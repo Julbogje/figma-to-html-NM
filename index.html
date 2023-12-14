@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://api.fonts.coollabs.io/css?family=Poppins" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/lightbox.min.css">
+  <script src="./js/lightbox-plus-jquery.min.js" defer></script>
+</head>
+<body>
+  <aside>
+    <nav>
+      <a href="#contact" id="contact-link">Contact</a>
+      <a href="">Projects</a>
+      <a href="">About</a>
+    </nav>
+  </aside>
+  <div class="image-wrapper">
+    <img src="./assets/Arc Text.svg" alt="" />
+  </div>
+  <main>
+    <div class="title-container">
+      <h2 class="title-upper">Jules</h2>
+      <div class="title-down-container">
+        <h2 class="title-down">Bogaerts</h2>
+        <div class="title-down-information"></div>
+        <p>Interactive installations</p>
+        <p>Audiovisual art</p>
+        <p>Portfolio</p>
+      </div>
+    </div>
+    <div class="images-container">
+      <a href="./assets/pexels-blue-record-18801976.jpg" data-lightbox="main" data-title="Foto 1">
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+      </a>
+
+      <a href="https://images.pexels.com/photos/19397456/pexels-photo-19397456/free-photo-of-ga-de-leegte-binnen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 "
+        data-lightbox="main">
+        <img
+          src="https://images.pexels.com/photos/19397456/pexels-photo-19397456/free-photo-of-ga-de-leegte-binnen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 "
+          alt="" />
+      </a>
+
+      <a href="./assets/pexels-blue-record-18801976.jpg" data-lightbox="main">
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+      </a>
+
+      <a href="./assets/pexels-blue-record-18801976.jpg" data-lightbox="main">
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+      </a>
+
+      <a href="./assets/pexels-blue-record-18801976.jpg" data-lightbox="main">
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+      </a>
+
+      <a href="./assets/pexels-blue-record-18801976.jpg" data-lightbox="main">
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+      </a>
+
+      <a href="./assets/pexels-blue-record-18801976.jpg" data-lightbox="main">
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+      </a>
+
+      <a href="./assets/pexels-blue-record-18801976.jpg" data-lightbox="main">
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+      </a>
+
+
+      <!-- <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" />
+        <img src="./assets/pexels-blue-record-18801976.jpg" alt="" /> -->
+    </div>
+    <div class="contact hidden modal" id="contact-modal">
+      <div class="modal-content" >
+        <span class="close">&times;</span>
+        <p>TEL: 0479274628</p>
+        <p>Email: hushfuehu@dh.be</p>
+      </div>
+    </div>
+    <div class="about hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+  </main>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("contact-modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("contact-link");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+  </script>
+</body>
+
+</html>
